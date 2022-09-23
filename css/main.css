@@ -95,7 +95,8 @@ body {
 
 .head-box {
   background-image: linear-gradient(to top, #2f303a66, #2f303a66), url(../images/head-box-bg.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: 50% 50%, 50% 50%;
   width: 100%;
   padding: 130px 0;
@@ -128,6 +129,7 @@ body {
 
 .container--we-do {
   max-width: 1200px;
+  padding-bottom: 40px;
 }
 
 .we-do {
@@ -195,6 +197,54 @@ body {
   line-height: 1.166;
   text-align: center;
   padding-bottom: 50px;
+}
+
+.container-highlight {
+  background-color: #F5F4FA;
+}
+
+.highlight__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.highlight__list {
+  display: flex;
+}
+
+.highlight__item {
+  max-width: 400px;
+  justify-content: space-between;
+  border: 1px solid greenyellow;
+  margin-bottom: 40px;
+}
+
+.highlight__element {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+.highlight__icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.highlight__icon-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.highlight__icon-subtitle {
+  font-weight: 300;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

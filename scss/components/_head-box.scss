@@ -1,7 +1,8 @@
 .head-box {
     background-image: linear-gradient(to top, #2f303a66, #2f303a66),
         url(../images/head-box-bg.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: 50% 50%, 50% 50%;
     width: 100%;
     padding: 130px 0;

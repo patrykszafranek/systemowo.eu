@@ -1,12 +1,11 @@
 .container {
     &--we-do {
         max-width: 1200px;
-        // background-color: #ececec;
+        padding-bottom: 40px;
     }
 }
 
 .we-do {
-    // background-color: #ececec;
     width: 100%;
 
     &__list {
@@ -19,19 +18,15 @@
 
     &__item {
         width: 300px;
-        // border: 1px solid #ececec;
     }
 
     &__card {
-
-
         &-img {
             display: block;
             max-width: 300px;
             height: 200px;
             width: 100%;
             border-radius: 15px;
-
         }
 
         &-desc {
@@ -42,7 +37,6 @@
             margin: 10px 0;
             align-items: center;
             padding: 15px;
-
         }
 
         &-title {
