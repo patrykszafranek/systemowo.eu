@@ -14,15 +14,14 @@
     }
 
     &__list {
+        max-width: 1200px;
         display: flex;
-        // max-width: 1200px;
-        // margin: 0 auto;
+        gap: 30px;
+        margin: 0 auto;
     }
 
     &__item {
-        max-width: 400px;
         justify-content: space-between;
-        border: 1px solid greenyellow;
         margin-bottom: 40px;
     }
 
@@ -32,13 +31,19 @@
         text-align: center;
         align-items: center;
         max-width: 400px;
-        // border: 1px solid greenyellow;
     }
 
     &__icon {
         width: 70px;
         height: 70px;
         margin-bottom: 20px;
+
+        &:hover,
+        &:focus {
+            fill: $font-color-decor;
+            transform: scale(1.1);
+            transition-duration: 250ms;
+        }
 
 
         &-title {

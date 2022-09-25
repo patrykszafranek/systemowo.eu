@@ -1,0 +1,115 @@
+/* ===== Footer styles ===== */
+.footercontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+}
+
+.footer {
+    background-color: #154c79;
+    padding: 60px 0;
+
+    &__img {
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+    }
+
+    &__logo {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.192;
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        color: $font-color-white;
+
+        &--decor {
+            color: $font-color-decor;
+        }
+    }
+
+    &__address {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: $font-color-white;
+
+    }
+
+    &__address-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.714;
+        color: rgba(255, 255, 255, 0.6);
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: $font-color-decor;
+        }
+    }
+
+    &__map {
+        padding-bottom: 40px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        &-text {
+            color: #fff;
+        }
+
+        &-company {
+            color: #fff;
+            font-weight: 700;
+        }
+
+        &-decor {
+            color: $font-color-decor;
+        }
+
+        &-coder {
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footercontent {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 200px;
+        align-items: center;
+        margin: 0px auto;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .footercontent {
+        flex-direction: row;
+        gap: 200px;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+    }
+}
+
+/* ===== End Footer styles ===== */

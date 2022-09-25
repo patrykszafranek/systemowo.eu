@@ -132,10 +132,12 @@
                 <ul class="highlight__list">
                     <li class="highlight__item">
                         <div class="highlight__element">
+
                             <svg class="highlight__icon">
                                 <use href="./images/sprite.svg#icon-checked"></use>
                             </svg>
                             <span class="highlight__icon-title">Darmowa wycena</span>
+
                             <p class="highlight__icon-subtitle">Skontaktuj się z nami i umów na darmową wycenę
                             </p>
                         </div>
@@ -168,18 +170,58 @@
 
         <section class="container">
             <div class="contact">
-                <h2>Nie czekaj</h2>
+                <h2 class="contact__title">Nie czekaj!</h2>
 
-                <p>Skontaktuj się z nami już dziś i umów na bezpłatną wycenę</p>
+                <p class="contact__desc">Skontaktuj się z nami już dziś i umów na bezpłatną wycenę</p>
 
-                <button>Skontaktuj się z nami</button>
+                <button class="contact__button">Skontaktuj się z nami</button>
 
             </div>
         </section>
     </main>
-    <footer>
-        © 2022 Systemowo.eu | Design & code: Patryk Szafranek
+    <footer class="footer">
+        <div class="container footercontent">
+            <section>
+                <h2 class="footer__logo">
+                    <img class=footer__img src="./images/logo-white.png">
+                    <a class="footer__link" href="index.html" alt="logo webstudio"><span
+                            class="footer__link">systemowo</span><span
+                            class="footer__link footer__link--decor">.eu</span>
+                    </a>
+                </h2>
+
+                <address class="footer__address">
+                    95-035 Ozorków, ul. Zagajnikowa 20
+                </address>
+                <ul class="footer__address-list">
+                    <li class="footer__address-item">
+                        <a class="footer__address-link" href="mailto:kontakt.systemowo@gmail.com">
+                            kontakt.systemowo@gmail.com</a>
+                    </li>
+                    <li class="footer__address-item">
+                        <a class="footer__address-link" href="tel:+48731567506">
+                            +48 731 567 506 - Jacek</a>
+                    </li>
+                    <li class="footer__address-item">
+                        <a class="footer__address-link" href="tel:+48697748063">
+                            +48 697 748 063 - Damian</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer__map">
+                <iframe width="325" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=18.87313842773438%2C51.776337690506644%2C19.751358032226566%2C52.133909518197136&amp;layer=mapnik&amp;marker=51.95548006091746%2C19.31224822998047"
+                    style="border: 1px solid black"></iframe><br /><small><a
+                        href="https://www.openstreetmap.org/?mlat=51.9555&amp;mlon=19.3122#map=11/51.9555/19.3122"></a></small>
+            </section>
+        </div>
+        <div class="footer__bottom">
+            <span class="footer__bottom-text">© 2022 <a class="footer__bottom-company" href="index.html">Systemowo<span
+                        class="footer__bottom-decor">.eu</span></a> | Design & Code: <a class="footer__bottom-coder"
+                    href="https://github.com/patrykszafranek">Patryk Szafranek</a></span>
+        </div>
     </footer>
+
 </body>
 
 </html>
