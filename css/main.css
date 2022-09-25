@@ -116,12 +116,27 @@ body {
   fill: #fbac2f;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 360px) and (max-width: 767px) {
+  .header {
+    width: 100%;
+    justify-content: center;
+  }
   .header__button {
     visibility: hidden;
     position: absolute;
   }
   .menu {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    width: 100%;
+    justify-content: center;
+  }
+  .header__button {
     visibility: hidden;
     position: absolute;
   }
@@ -246,7 +261,6 @@ body {
 }
 
 .highlight__list {
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -263,7 +277,7 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .highlight__icon {
@@ -287,6 +301,18 @@ body {
 .highlight__icon-subtitle {
   font-weight: 300;
   font-size: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .highlight__list {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .highlight__list {
+    flex-direction: row;
+  }
 }
 
 .contact {
@@ -465,8 +491,8 @@ body {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 56px;
-  right: 56px;
+  top: 16px;
+  right: 16px;
   color: #000;
 }
 
