@@ -65,7 +65,9 @@
     &__bottom {
         display: flex;
         justify-content: center;
-        align-items: flex-end;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
 
         &-text {
             color: #fff;

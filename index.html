@@ -47,9 +47,16 @@
                     <li class="menu__item">
                         <a class="menu__link" href="#">netia</a>
                     </li>
-                    <!-- <button class="menu__button">skontaktuj się z nami</button> -->
                 </ul>
             </nav>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-toggle__svg">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="header__button">
+                <button class="header__button-btn">skontaktuj się z nami</button>
+            </div>
         </div>
     </header>
 
@@ -221,7 +228,41 @@
                     href="https://github.com/patrykszafranek">Patryk Szafranek</a></span>
         </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="menu-toggle__svg" width="24" height="24">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__lists">
+            <ul class="mobile-menu">
+                <li><a href="" class="mobile-menu__link">Monitoring</a></li>
+                <li>
+                    <a href="" class="mobile-menu__link">Telewizja</a>
+                </li>
+                <li><a href="" class="mobile-menu__link">Alarmy</a></li>
+                <li><a href="" class="mobile-menu__link">Domofony</a></li>
+                <li><a href="" class="mobile-menu__link">Bramy</a></li>
+                <li><a href="" class="mobile-menu__link">Netia</a></li>
+            </ul>
+            <ul class="mobile-menu__contacts-list">
+                <li class="mobile-menu__contacts-elem">
+                    <a class="mobile-menu__email" href="mailto:kontakt.systemowo@gmail.com">
+                        kontakt.systemowo@gmail.com</a>
+                </li>
+                <li class="mobile-menu__contacts-elem">
+                    <a class="mobile-menu__telephone" href="tel:+48731567506">
+                        +48 731 567 506 - Jacek</a>
+                </li>
+                <li class="mobile-menu__contacts-elem">
+                    <a class="mobile-menu__telephone" href="tel:+48697748063">
+                        +48 697 748 063 - Damian</a>
+                </li>
 
+            </ul>
+        </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
