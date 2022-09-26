@@ -36,7 +36,7 @@
                         <a class="menu__link" href="telewizja.html">telewizja</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="alarmy.html">alarmy</a>
+                        <a class="menu__link menu__link--active" href="alarmy.html">alarmy</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="domofony.html">domofony</a>
@@ -45,23 +45,32 @@
                         <a class="menu__link" href="bramy.html">bramy</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link menu__link--active" href="netia.html">netia</a>
+                        <a class="menu__link" href="netia.html">netia</a>
                     </li>
                 </ul>
             </nav>
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="menu-toggle__svg">
                     <use href="./images/sprite.svg#icon-menu"></use>
                 </svg>
             </button>
             <div class="header__button">
-                <button class="header__button-btn">skontaktuj się z nami</button>
+                <button type="button" class="header__button-btn">skontaktuj się z nami</button>
             </div>
         </div>
     </header>
 
     <main>
+<section class="container">
+    <div class="contact">
+        <h2 class="contact__title">Nie czekaj!</h2>
 
+        <p class="contact__desc">Skontaktuj się z nami już dziś i umów na bezpłatną wycenę</p>
+
+        <button type="button" class="contact__button">Skontaktuj się z nami</button>
+
+    </div>
+</section>
     </main>
     <footer class="footer">
         <div class="container footercontent">
@@ -106,7 +115,7 @@
         </div>
     </footer>
     <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+        <button type="button" class="menu-toggle js-close-menu">
             <svg class="menu-toggle__svg" width="24" height="24">
                 <use href="./images/sprite.svg#icon-close"></use>
             </svg>
